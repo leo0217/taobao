@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="SHORTCUT ICON" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'taobao.css' %}">
+
+</head>
+<body>
+
+<div class="wrapper">
+    {#    顶部导航#}
+    <div class="top-nav">
+        <div class="top-nav-wrap">
+            <div class="top-nav-center">
+{#                左侧菜单#}
+                <ul class="top-nav-ul-l">
+                    <li class="top-nav-li-l">
+                        <div class="address">
+                            <span class="address-span" onclick="">中国大陆</span>
+{#                            <span class="address-span-arrow">下</span>#}
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class="top-nav-li-l">
+                        <div class="login"><a href="#">亲，请登录</a></div>
+                        <div class="register"><a href="#">免费注册</a></div>
+                    </li>
+                    <li class="top-nav-li-l"><a href="#" class="li-l-a">手机淘宝</a></li>
+                </ul>
+{#                右侧菜单#}
+                <ul class="top-nav-ul-r">
+                    <li class="top-nav-li-r">
+                        
+                        <div class="my-taobao">
+                            <a href="#" class="li-r-a">我的淘宝</a>
+                            <span class="arrow"><img src="/static/images/arrow.png" alt=""></span>
+                        </div>
+                        
+                    </li>
+                    <li class="top-nav-li-r">
+                        <div class="shop">
+                            <span class="shop-img"><img src="/static/images/shop.png" alt=""></span>
+                            <a href="#" class="li-r-a">购物车</a>
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class="top-nav-li-r">
+                        <div class="like">
+                            <span class="like-img"><img src="/static/images/like-solid.png" alt=""></span>
+                            <a href="#" class="li-r-a">收藏夹</a>
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+
+                        </div>
+                    </li>
+                    <li class="top-nav-li-r">
+                        <a href="#" class="li-r-a">商品分类</a>
+                        <div class="shop-class">|</div>
+                    </li>
+
+                    <li class="top-nav-li-r">
+                        <div class="sell-center">
+                            <a href="#" class="li-r-a">卖家中心</a>
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class="top-nav-li-r">
+                        <div class="contacts">
+                            <a href="#" class="li-r-a">联系客服</a>
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li class="top-nav-li-r">
+                        <div class="site-nav">
+                            <span class="like-img"><img src="/static/images/nav.png" alt=""></span>
+                            <a href="#" class="li-r-a">网站导航</a>
+                            <span class="arrow-img"><img src="/static/images/arrow.png" alt=""></span>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    {#    搜索栏#}
+    <div class="search">
+        <div class="search-wrap">
+            <div class="search-wrap-center">
+{#                左侧logo#}
+                <div class="logo">
+                    <div class="logo-img">
+                       <h1><img src="/static/images/logo.png" alt=""></h1>
+                    </div>
+                </div>
+{#                中间search主体#}
+                <div class="search-content">
+                    <div class="search-content-wrap">
+                        <div class="search-tab">
+                            <div class="list">
+                                <ul class="list-ul">
+                                    <li class="list-ul-li select">宝贝</li>
+                                    <li class="list-ul-li">天猫</li>
+                                    <li class="list-ul-li">店铺</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="search-box"></div>
+                        <div class="search-hots"></div>
+
+                    </div>
+                </div>
+{#                右边手机淘宝二维码区域#}
+                <div class="mobile-taobao"></div>
+            </div>
+        </div>
+    </div>
+    {#    导航栏#}
+    <div class="nav"></div>
+    {#    内容栏#}
+    <div class="content"></div>
+</div>
+
+
+
+
+
+
+    <script src="{% static 'taobao.js' %}"></script>
+</body>
+</html>
